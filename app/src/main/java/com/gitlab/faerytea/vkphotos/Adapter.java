@@ -34,7 +34,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.VH> {
     }
 
     public void setElement(int pos, byte[] data) {
-        this.data[pos] = BitmapFactory.decodeByteArray(data, 0, data.length);
+        this.data[pos] = data == null ? null : BitmapFactory.decodeByteArray(data, 0, data.length);
         notifyItemChanged(pos);
     }
 
