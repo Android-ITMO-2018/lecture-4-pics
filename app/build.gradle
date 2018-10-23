@@ -16,7 +16,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    compileOptions {
+    compileOptions { // Эти строчки включат вам Java 8 (лямбды) и Java 7 (diamond syntax). Настоятельно рекомендуются к использованию
         targetCompatibility JavaVersion.VERSION_1_8
         sourceCompatibility JavaVersion.VERSION_1_8
     }
